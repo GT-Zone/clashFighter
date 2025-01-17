@@ -10,11 +10,18 @@ public:
     void run();
 
 private:
-    void processInput();
+    void userControl();
     void update();
+    void render();
+
+    Ground ground;
+
     bool isRunning;
 
-    const int gridWidth = 30;
-    const int gridHeight = 30;
+    const int gridWidth = 40;
+    const int gridHeight = 20;
+
+    int directionX = 0; // Hero's current horizontal direction
+    int directionY = 0; // Hero's current vertical direction
 };
 #endif

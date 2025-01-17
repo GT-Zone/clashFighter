@@ -31,3 +31,7 @@ clean:
 # To run the game
 run: $(EXEC)
 	./$(EXEC)
+
+debug: $(EXEC)
+	gdb -q ./$(EXEC)
+
